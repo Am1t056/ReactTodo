@@ -1,0 +1,69 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+box-sizing: border-box;
+font-family: "Roboto",sans-serif;
+text-decoration: none;
+}
+body{
+    background-color: #8758ff;
+}
+
+.todo-wrapper form{
+ 
+    width: 100%;
+}
+.todo-wrapper form .todo-input{
+    padding: 10px 100px;
+    border-radius: 5px 0px 0px 5px;
+    background: #8758ff;
+    outline: none;
+    border: 1px solid #8758ff;
+    border-right: none;
+    color: #fff;
+
+}
+.todo-wrapper form .todo-input::placeholder{
+    color: #575555;
+}
+.todo-wrapper form .todo-btn{
+    padding: 10px 10px;
+    color: #fff;
+   border-radius: 0 5px 5px 0;
+    background-color: #8758ff;
+}
+
+.Todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+   padding: 20px 100px;
+   background-color: #8758ff;
+   color: #fff;
+   border-radius: 10px;
+}
+.Todo p{
+    cursor: pointer;
+}
+.Todo .completed{
+    text-decoration: line-through;
+    color: #1b0948;
+
+
+}
+.Todo div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
